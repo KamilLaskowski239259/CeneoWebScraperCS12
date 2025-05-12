@@ -32,3 +32,4 @@ class Opinion:
         return "\n".join([f"{key}: {getattr(self,key)}"for key in self.selectors.keys()])
     def __repr__(self):
         return "Opinion("+", ".join([f"{key}: {getattr(self,key)}"for key in self.selectors.keys()]) + ")"
+    #yes
