@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 from config import headers
 from app.utils import extract_data, translate_data, create_if_not_exists
 
-
+matplotlib.use('agg')
 
 class Product:
 
@@ -112,6 +112,7 @@ class Product:
 
 
 class Opinion:
+    
     selectors={
     'opinion_id':(None, "data-entry-id"),
     'author':("span.user-post__author-name",),
@@ -128,6 +129,7 @@ class Opinion:
     'pros_en' : (),
     'cons_en' : ()
     }
+
     def __init__(self, opinion_id="", author="", recommend=False, stars=0, content_pl="", pros_pl=[], cons_pl=[], up_votes=0, down_votes=0, published=None, purchased=None, content_en="", pros_en=[], cons_en=[]):
         self.opinion_id = opinion_id
         self.author = author
@@ -143,8 +145,10 @@ class Opinion:
         self.content_en = content_en
         self.pros_en = pros_en
         self.cons_en = cons_en
+
     def __str__(self):
         return "\n".join([f"{key}: {getattr(self,key)}"for key in self.selectors.keys()])
+
     def __repr__(self):
         return "Opinion("+", ".join([f"{key}: {getattr(self,key)}"for key in self.selectors.keys()])+")"
     
