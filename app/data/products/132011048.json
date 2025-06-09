@@ -1,0 +1,39 @@
+{
+    "product_id": "132011048",
+    "product_name": "Leżak Turystyczny Fotel Plażowy Składany Ogrodowy",
+    "stats": {
+        "opinions_count": 186,
+        "pros_count": 81,
+        "cons_count": 4,
+        "pros_cons_count": 3,
+        "average_stars": 4.658602150537634,
+        "pros": {
+            "appearance": 79,
+            "quality": 75,
+            "convenience": 73,
+            "durability": 72
+        },
+        "cons": {
+            "convenience": 2,
+            "quality": 2,
+            "durability": 2
+        },
+        "recommendations": {
+            "true": 177,
+            "false": 5,
+            "NaN": 4
+        },
+        "stars": {
+            "0.5": 3,
+            "1.0": 1,
+            "1.5": 1,
+            "2.0": 0,
+            "2.5": 0,
+            "3.0": 3,
+            "3.5": 1,
+            "4.0": 21,
+            "4.5": 28,
+            "5.0": 128
+        }
+    }
+}
